@@ -1,0 +1,7 @@
+{
+  "rare_drop": {
+    "sounds": [
+      { "name": "animationinaction:rare_drop", "stream": false }
+    ]
+  }
+}

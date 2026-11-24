@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "animationinaction",
+  "version": "${version}",
+  "name": "Animations in Action: Hypixel",
+  "description": "Rare-drop reveal animations for Hypixel Skyblock: spinning item, rarity-coloured rays, per-drop toggles.",
+  "authors": ["Artic", "Calculus"],
+  "contact": {
+    "homepage": "https://github.com/imCalculus/Animations-in-Action-Hypixel",
+    "sources": "https://github.com/imCalculus/Animations-in-Action-Hypixel"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/animationinaction/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.artic.aia.AnimationInAction"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
