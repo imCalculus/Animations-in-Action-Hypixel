@@ -139,6 +139,11 @@ final class HeadTextures {
             url = "https://" + url.substring(7);
          }
 
+         URI uri = URI.create(url);
+         if (!"https".equalsIgnoreCase(uri.getScheme()) || !"textures.minecraft.net".equalsIgnoreCase(uri.getHost())) {
+            throw new IllegalStateException("disallowed texture host");
+         }
+
          File cache = new File(new File(AIAConfig.dir, "skins"), hash(key) + ".png");
          if (cache.isFile() && cache.length() > 0L) {
             try {
@@ -147,10 +152,10 @@ final class HeadTextures {
             }
          }
 
-         HttpURLConnection c = (HttpURLConnection)URI.create(url).toURL().openConnection();
+         HttpURLConnection c = (HttpURLConnection)uri.toURL().openConnection();
          c.setConnectTimeout(8000);
          c.setReadTimeout(10000);
-         c.setInstanceFollowRedirects(true);
+         c.setInstanceFollowRedirects(false);
          c.setRequestProperty("User-Agent", "AnimationInAction/1.0");
 
          try {
