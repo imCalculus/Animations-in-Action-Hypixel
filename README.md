@@ -41,7 +41,7 @@ cd Animations-in-Action-Hypixel
 ## Usage and Features
 
 ### Key Features
-* **Rare-Drop Reveal Overlay:** Displays a spinning 3D item preview surrounded by rarity-colored rays when a supported rare drop triggers.
+* **Rare-Drop Reveal Overlay:** Displays a spinning 3D item preview surrounded by rarity-colored rays and a animation when a supported rare drop triggers.
 * **Per-Drop Toggles:** Enable or disable animations individually for specific Hypixel SkyBlock drops.
 * **Live Preview & Config GUI:** Adjust animation behavior and preview drop reveals directly in-game without restarting Minecraft.
 
